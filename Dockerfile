@@ -13,13 +13,8 @@ RUN \
   apt-get install -yqq nodejs yarn && \
   pip install -U pip && pip install pipenv && \
   npm i -g npm@^6 && \
-  rm -rf /var/lib/apt/lists/* && \
-  npm install -g @aws-amplify/cli
+  rm -rf /var/lib/apt/lists/*
 
 # Expose ports.
-EXPOSE 80
-EXPOSE 443
 EXPOSE 3000
-EXPOSE 5000
-EXPOSE 5001
 EXPOSE 20002
